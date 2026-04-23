@@ -58,7 +58,7 @@ function buildPlantUML(title: string, steps: Step[]): string {
   return lines.join("\n");
 }
 
-export function FlowchartGenerator({ onGenerate }: { onGenerate: (code: string) => void }) {
+export function ActivityGenerator({ onGenerate }: { onGenerate: (code: string) => void }) {
   const [open, setOpen] = useState(false);
   const [title, setTitle] = useState("User Flow");
   const [steps, setSteps] = useState<Step[]>(DEFAULT_STEPS);
