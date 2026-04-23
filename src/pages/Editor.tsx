@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { FlowchartGenerator } from "@/components/FlowchartGenerator";
+import { ActivityGenerator } from "@/components/ActivityGenerator";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
