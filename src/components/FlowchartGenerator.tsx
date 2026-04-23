@@ -252,7 +252,7 @@ export function FlowchartGenerator({ onGenerate }: { onGenerate: (code: string) 
                     className={cn(
                       "rounded-lg border border-border bg-card p-3 shadow-soft",
                       node.kind === "decision" && "border-primary/30",
-                      (node.kind === "start" || node.kind === "end") && "border-pink-400/40",
+                      (node.kind === "start" || node.kind === "end") && "border-primary/40",
                     )}
                   >
                     <div className="flex items-center gap-2">
