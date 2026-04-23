@@ -12,6 +12,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { Header } from "@/components/Header";
+import { FlowchartGenerator } from "@/components/FlowchartGenerator";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -184,6 +185,14 @@ const Editor = () => {
             <Button size="sm" onClick={handleGenerate} className="bg-gradient-primary text-primary-foreground hover:opacity-90">
               <Play className="mr-1.5 h-4 w-4" /> Generate
             </Button>
+            <FlowchartGenerator
+              onGenerate={(generated) => {
+                setCode(generated);
+                setRenderedCode(generated);
+                setSelectedTemplate("");
+                toast.success("Flowchart generated from your steps");
+              }}
+            />
             <Button size="sm" variant="outline" onClick={handleCopy}>
               <Copy className="mr-1.5 h-4 w-4" /> Copy
             </Button>
