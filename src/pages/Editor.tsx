@@ -191,7 +191,15 @@ const Editor = () => {
                 setCode(generated);
                 setRenderedCode(generated);
                 setSelectedTemplate("");
-                toast.success("Flowchart generated from your steps");
+                toast.success("Flowchart generated with proper shapes");
+              }}
+            />
+            <ActivityGenerator
+              onGenerate={(generated) => {
+                setCode(generated);
+                setRenderedCode(generated);
+                setSelectedTemplate("");
+                toast.success("Activity diagram generated");
               }}
             />
             <Button size="sm" variant="outline" onClick={handleCopy}>
