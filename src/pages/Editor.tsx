@@ -12,6 +12,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { Header } from "@/components/Header";
+import { FlowchartGenerator } from "@/components/FlowchartGenerator";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
