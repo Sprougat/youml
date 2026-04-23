@@ -95,7 +95,7 @@ export function ActivityGenerator({ onGenerate }: { onGenerate: (code: string) =
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button size="sm" variant="outline">
-          <Workflow className="mr-1.5 h-4 w-4" /> Flowchart Generator
+          <Workflow className="mr-1.5 h-4 w-4" /> Activity Builder
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[85vh] max-w-2xl overflow-hidden p-0">
@@ -103,10 +103,10 @@ export function ActivityGenerator({ onGenerate }: { onGenerate: (code: string) =
           <DialogHeader className="border-b border-border px-6 py-4">
             <DialogTitle className="flex items-center gap-2">
               <Workflow className="h-5 w-5 text-primary" />
-              Flowchart Generator
+              Activity Diagram Builder
             </DialogTitle>
             <DialogDescription>
-              Describe your flow step-by-step. We'll produce a clean PlantUML activity diagram.
+              Describe your process step-by-step. Generates a clean PlantUML activity diagram.
             </DialogDescription>
           </DialogHeader>
 
