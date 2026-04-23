@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { FlowchartGenerator } from "@/components/FlowchartGenerator";
+import { ActivityGenerator } from "@/components/ActivityGenerator";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -190,7 +191,15 @@ const Editor = () => {
                 setCode(generated);
                 setRenderedCode(generated);
                 setSelectedTemplate("");
-                toast.success("Flowchart generated from your steps");
+                toast.success("Flowchart generated with proper shapes");
+              }}
+            />
+            <ActivityGenerator
+              onGenerate={(generated) => {
+                setCode(generated);
+                setRenderedCode(generated);
+                setSelectedTemplate("");
+                toast.success("Activity diagram generated");
               }}
             />
             <Button size="sm" variant="outline" onClick={handleCopy}>
